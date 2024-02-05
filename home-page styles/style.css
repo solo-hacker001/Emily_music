@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;0,900;1,400;1,700&display=swap");
+
+body {
+  background-color: #0b1828;
+  min-width: 350px;
+}
+
+body a {
+  text-decoration: none;
+}
+
+.container-fluid {
+  /* background-color: #F5F1F1; */
+  font-family: "Poppins", sans-serif;
+}
+
+#background-image {
+  background-size: 100vw;
+}
+
+/* .nav-link:hover {
+  background-color: #f2c8c8;
+  color: white;
+} */
+
+h1 {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #7f4343;
+  -webkit-text-stroke-width: 3px;
+}
+
+#button-home {
+  background-color: #7f4343;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#button-home:hover {
+  background-color: black;
+  color: white;
+}
+
+#button-home:active {
+  background-color: black;
+}
+.mainnav .active {
+  color: #a50505 !important;
+}
+
+.mainnav .active::after {
+  content: "";
+  background-color: #a50505;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+}
+
+.hero-nav .active {
+  color: #a50505 !important;
+  background-color: transparent !important;
+}
+
+.hero-nav .active::after {
+  content: "";
+  background-color: #a50505;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+}
+
+.container-fluid {
+  /* background-color: #F5F1F1; */
+  font-family: "Poppins", sans-serif;
+}
+
+#background-image {
+  background-size: 100vw;
+  background-repeat: no-repeat;
+}
+
+.nav-link:hover {
+  /* background-color: #f2c8c8; */
+  color: white;
+}
+
+h1 {
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-color: #7f4343;
+  -webkit-text-stroke-width: 3px;
+}
+
+#button-home {
+  background-color: #7f4343;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#button-home:hover {
+  background-color: black;
+  color: white;
+}
+
+#button-home:active {
+  background-color: black;
+}
+
+/* CSS COPY! CSS COPY! CSS COPY! CSS COPY! CSS COPY! */
+.tab-content {
+  /* margin-top: 12rem;
+    margin-left: 12rem; */
+  align-items: center;
+  width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+.song:hover {
+  border: solid thin grey;
+  cursor: pointer;
+  transform: translateY(-10px);
+}
+
+.song {
+  background-color: #7f4343;
+  background: linear-gradient(
+    90deg,
+    #7f4343 0%,
+    #7f4343 15%,
+    #5d3636 67%,
+    rgba(0, 212, 255, 0) 100%
+  );
+  transition: all 0.3s ease;
+}
+
+.song-list {
+  margin-top: 10rem;
+}
+
+.song-img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* .stream {
+  font-family: "Playfair Display", sans-serif;
+  margin-top: 1rem;
+  margin-left: 1.2rem;
+  background: #7f4343;
+  color: #fff;
+  display: inline-block;
+  border-radius: 10px;
+  box-shadow: var(--box-shadow);
+  padding: 1rem 4rem;
+  font-size: 1.2rem;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  text-decoration: none;
+} */
+
+.stream::before,
+.stream::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  background: #bd394c;
+  z-index: -1;
+  transition: 0.3s linear;
+}
+
+.stream::before {
+  left: 0;
+}
+
+.stream::after {
+  right: 0;
+}
+
+.stream:hover::before,
+.stream:hover::after {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  /* Styles for small screens */
+
+  .navbar-toggler {
+    padding-left: -50rem;
+    margin-right: 10rem;
+  }
+
+  .input-group-text {
+    display: none;
+  }
+
+  .navbar-brand {
+    display: none;
+  }
+
+  .tab-content,
+  .song-list {
+    padding: 10px;
+  }
+
+  .song {
+    width: 25rem;
+  }
+
+  .song-img {
+    display: none;
+  }
+
+  .col-1 {
+    display: none;
+  }
+
+  .ms-1 {
+    padding-left: 1rem;
+  }
+
+  #button-home {
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+  }
+
+  .display-1 {
+    margin-left: -5rem;
+  }
+
+  .pop {
+    margin-left: -5rem;
+  }
+}

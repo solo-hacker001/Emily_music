@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="portfolio styles/portfolio.css">
+  <link rel="stylesheet" type="text/css" href="portfolio styles/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="portfolio styles/bootstrap-icons.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- nav Start -->
+
+  <nav class="mainnav shadow navbar-expand-md navbar navbar-light bg-light  fixed-top" style="min-width: 350px">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">
+        <i class="fas fa-music"></i> Emily Music
+      </a>
+
+      <div>
+        <div class="input-group ">
+          <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username"
+            aria-describedby="basic-addon2">
+          <span class="bg-black text-white border-0 input-group-text" id="basic-addon2"><i
+              class="bi bi-search"></i></span>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact</a>
+          </li>
+  </nav>
+  <!-- nav End -->
+
+  <!-- header Start -->
+  <div class="container">
+    <div class="row mt-3">
+      <div class="col ">
+        <h3 class="text-bold text-center bg-custom">Album Collection</h3>
+      </div>
+    </div>
+  </div>
+  <!-- header End  -->
+
+
+  <!-- intro paragraph Start -->
+  <div class="aboutEmily mx-2">
+    <p>
+      <small>
+        Welcome to the musical world of Emily! Dive into a captivating journey through my albums, where each melody
+        tells
+        a
+        story and every lyric paints a vivid picture. From heartfelt ballads to upbeat anthems, my music reflects the
+        essence of
+        life's experiences, emotions, and aspirations. Click on the 'Tracks' button to explore more of the melodies that
+        accompany these tales, as we navigate through moments of love, hope, and resilience. Join me as we embark on an
+        unforgettable musical adventure that resonates with the rhythm of your soul.
+      </small>
+    </p>
+  </div>
+  <!-- intro paragraph End -->
+
+
+  <!-- Albums Start -->
+  <div class="container-fluid mt-3 mb-5 ">
+    <div class="row g-4">
+      <div class=" col-md-3 col-lg-4 col-sm-1 text-center">
+        <div class="card">
+          <img src="assets/Be more.jpg" height='270px' class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title bg-custom">Be More</h5 </div>
+            <div class="card-footer">
+              <div class="toggle-container">
+                <a class="text-secondary text-decoration-none " role='button' onclick="toggleInfo(this)">Tracks</a>
+                <div class="toggle-content hidden">
+
+                  <ol class="fw-bold">
+                    <li class="fw-bold">Into the sun.</li>
+                    <li class="fw-bold">I will find you!</li>
+                    <li class="fw-bold">Hold my hand.</li>
+                    <li class="fw-bold">1000 stars</li>
+                    <li class="fw-bold">Be more</li>
+                    <li class="fw-bold">All of me</li>
+                  </ol>
+                  <button class="close-button" onclick="closeContent(this)">Close</button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-lg-4 col-sm-1 text-center">
+        <div class="card">
+          <img src="assets/Freedom.jpg" height='270px' class="card-img-top" alt="...">
+          <div class="card-body">
+
+            <h5 class="card-title bg-custom">Freedom</h5>
+
+
+
+          </div>
+          <div class="card-footer">
+            <div class="toggle-container">
+              <a class="text-secondary text-decoration-none " role='button' onclick="toggleInfo(this)">Tracks</a>
+              <div class="toggle-content hidden">
+                <ol>
+
+                  <li class="fw-bold">Young.</li>
+                  <li class="fw-bold">Sunrise!</li>
+                  <li class="fw-bold">Sweet Caroline.</li>
+                  <li class="fw-bold">Unforgettable</li>
+                  <li class="fw-bold">Valentine.</li>
+                  <li class="fw-bold">Free Bird.</li>
+                  <li class="fw-bold">Wind of Change.</li>
+
+
+                </ol>
+                <button class="close-button" onclick="closeContent(this)">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-lg-4 col-sm-1 text-center">
+        <div class="card">
+          <img src="assets/crying.jpg" height='270px' class="card-img-top" alt="...">
+          <div class="card-body">
+
+            <h5 class="card-title bg-custom">Heart Break</h5>
+
+
+
+          </div>
+          <div class="card-footer">
+            <div class="toggle-container">
+              <a class="text-secondary text-decoration-none " role='button' onclick="toggleInfo(this)">Tracks</a>
+              <div class="toggle-content hidden">
+                <ol>
+
+                  <li class="fw-bold">I will survive</li>
+                  <li class="fw-bold">Irreplaceable</li>
+                  <li class="fw-bold">All too well.</li>
+                  <li class="fw-bold">You Oughta know</li>
+                  <li class="fw-bold">I will always love u</li>
+                  <li class="fw-bold">All i do is cry</li>
+                  <li class="fw-bold">I have nothing</li>
+
+
+
+                </ol>
+                <button class="close-button" onclick="closeContent(this)">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 col-lg-4 col-sm-1 text-center">
+        <div class="card">
+          <img src="assets/dandelions.jpg" height='270px' class="card-img-top" alt="...">
+          <div class="card-body">
+
+            <h5 class="card-title bg-custom">Dandelions</h5>
+
+
+
+          </div>
+          <div class="card-footer">
+            <div class="toggle-container">
+              <a class="text-secondary text-decoration-none " role='button' onclick="toggleInfo(this)">Tracks</a>
+              <div class="toggle-content hidden">
+                <ol>
+
+                  <li class="fw-bold">Life is a flower.</li>
+                  <li class="fw-bold">Kiss from a Rose!</li>
+                  <li class="fw-bold">Build Me Up Buttercup.</li>
+                  <li v>Slip On Through</li>
+                  <li class="fw-bold">All I Wanna Do</li>
+                  <li class="fw-bold">Tears in the Morning</li>
+                  <li class="fw-bold">This Whole World</li>
+
+
+                </ol>
+                <button class="close-button" onclick="closeContent(this)">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3 col-lg-4 col-sm-1 text-center">
+        <div class="card">
+          <img src="assets/cassette.jpg" height='270px' class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title bg-custom">Remember</h5>
+
+
+
+
+          </div>
+          <div class="card-footer">
+            <div class="toggle-container">
+              <a class="text-secondary text-decoration-none" role='button' onclick="toggleInfo(this)">Tracks</a>
+              <div class="toggle-content hidden">
+                <ol>
+
+                  <li class="fw-bold">Memories.</li>
+                  <li class="fw-bold">Photograph!!</li>
+                  <li class="fw-bold">Glory Days.</li>
+                  <li class="fw-bold">I will Remember You</li>
+                  <li class="fw-bold">When we were Young</li>
+                  <li class="fw-bold">Yesterday</li>
+
+                </ol>
+                <button class="close-button" onclick="closeContent(this)">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Album End -->
+
+  <div id="upArrow" class="up-arrow">&uarr;</div>
+  <!-- Footer Start -->
+  <footer class="bg-light footer text-center" style='height: 40px;'>
+    <!-- Copyright Start -->
+    <div class="text-center p-3 " style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2024 Emily Music. All Rights reserved.
+      <!-- <a class="text-body text-decoration-none">BGIT GROUP E</a> -->
+
+
+
+    </div>
+    <!-- Copyright End -->
+  </footer>
+  <!-- footer End -->
+
+
+
+  <!-- javascript function for the tracks to show more info when toggled -->
+  <script>
+    function toggleInfo(element) {
+      let container = element.parentElement.querySelector('.toggle-content');
+      container.classList.toggle('active');
+    }
+    // function to close once the tracks are displayed
+    function closeContent(button) {
+      let container = button.parentElement;
+      container.classList.remove('active');
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+      let upArrow = document.getElementById('upArrow');
+
+      upArrow.addEventListener('click', function () {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      });
+    });
+
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="./scripts/script.js"></script>
+</body>
+
+</html>
